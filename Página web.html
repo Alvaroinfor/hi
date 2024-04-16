@@ -1,0 +1,87 @@
+
+<!DOCTYPE html> 
+
+<h1 style="color:orangered">Buenas días, tardes o noches, sea cual sea la hora en la que veas esta página</h1> 
+<style>
+    body {
+      background-color: rgb(236, 225, 67);
+    }
+</style>
+
+<body style="font-size: xx-large" >
+
+
+    <h2 style="text-align:center;">¿Por qué la Ingeniería Sanitaria sigue demandada?</h2>
+    <p style="text-align:center;"><em style="color:tomato;">
+        La ingeniería sanitaria es altamente demandada en el extranjero por varias razones:</em></p>
+    
+
+
+
+
+
+    <p style="font-family:Arial" style="text-align:justify;"><span style="color:brown">1. Problemas de salud pública: 
+        Muchos países enfrentan desafíos en materia de salud pública, como la falta de acceso al agua potable, la gestión de aguas residuales, la contaminación del aire y del suelo, entre otros. 
+        Los ingenieros sanitarios son fundamentales para abordar estos problemas y mejorar la calidad de vida de las comunidades.</span></p>
+        <p style="font-family:Arial" style="text-align:justify;"><span style="color:brown">2. Desarrollo de infraestructura: En muchas regiones del mundo, especialmente en países en desarrollo, 
+            hay una necesidad urgente de desarrollar infraestructuras de saneamiento básico, como sistemas de suministro de agua potable, redes de alcantarillado y plantas de tratamiento de aguas residuales.
+            Los ingenieros sanitarios son esenciales en el diseño, construcción y mantenimiento de estas infraestructuras.</span>
+        </p>
+
+        <p style="font-family:Arial" style="text-align:justify;"><span style="color:brown">3.Gestión de desastres naturales: Los desastres naturales, como huracanes, terremotos e inundaciones,
+         pueden tener un impacto devastador en las infraestructuras de saneamiento y en la salud pública. Los ingenieros sanitarios son necesarios para diseñar sistemas de respuesta a emergencias y 
+         para la reconstrucción de infraestructuras dañadas después de un desastre.</span></p>
+
+
+        
+        <label>Número a : </label>
+<input id="en1" type="number" style="font-size: x-large;"><br><br>
+<label>Número b : </label>
+<input id="en2" type="number" style="font-size: x-large;"><br><br>
+<button onclick="suma()" style="font-size: x-large;">a+b</button>
+<button onclick="division()" style="font-size: x-large;">a/b</button>
+<button onclick="producto()" style="font-size: x-large;">a*b</button>
+<button onclick="resta1()" style="font-size: x-large;">a-b</button>
+<button onclick="resta2()" style="font-size: x-large;">b-a</button>
+<button onclick="raiz1()" style="font-size: xx-large;">va</button> 
+<button onclick="raiz2()" style="font-size: xx-large;">vb</button>
+<p id="demo1"></p>
+
+<script>
+function suma(){
+    a = document.getElementById("en1").value;
+    b = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(a) + Number(b);
+}
+function division(){
+    a = document.getElementById("en1").value;
+    b = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(a)/Number(b);
+}
+function producto(){
+    a = document.getElementById("en1").value;
+    b = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(a)*Number(b);
+}
+function resta1(){
+    a = document.getElementById("en1").value;
+    b = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(a)-Number(b);
+}
+function resta2(){
+    a = document.getElementById("en1").value;
+    b = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(b)-Number(a);
+}
+function raiz1(){
+    a = document.getElementById("en1").value;
+    document.getElementById("demo1").innerHTML = Math.sqrt(Number(a));
+}
+function raiz2(){
+    b = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Math.sqrt(Number(b));
+}
+</script>
+</body>
+</html>
+   
